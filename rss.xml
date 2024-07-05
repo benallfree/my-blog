@@ -2,38 +2,38 @@
 			<channel>
 				<title>Ilkerflix</title>
 				<description>Ilkerflix</description>
-				<link>https://blog.ilkerflix.com/my-blog</link>
-				<atom:link href="https://blog.ilkerflix.com/my-blog/rss.xml" rel="self" type="application/rss+xml"/>
+				<link>https://ilkersigirci.github.io/my-blog</link>
+				<atom:link href="https://ilkersigirci.github.io/my-blog/rss.xml" rel="self" type="application/rss+xml"/>
 				
 						<item>
 							<title>Third post.</title>
 							<description>Third post.</description>
-							<link>https://blog.ilkerflix.com/my-blog/post/Why.Nations.Fail</link>
-							<guid isPermaLink="true">https://blog.ilkerflix.com/my-blog/post/Why.Nations.Fail</guid>
+							<link>https://ilkersigirci.github.io/my-blog/post/Why.Nations.Fail</link>
+							<guid isPermaLink="true">https://ilkersigirci.github.io/my-blog/post/Why.Nations.Fail</guid>
 							<pubDate>Fri, 29 Dec 2023 00:00:00 GMT</pubDate>
 						</item>
 					
 						<item>
 							<title>Second</title>
 							<description>Second post.</description>
-							<link>https://blog.ilkerflix.com/my-blog/post/second-post</link>
-							<guid isPermaLink="true">https://blog.ilkerflix.com/my-blog/post/second-post</guid>
+							<link>https://ilkersigirci.github.io/my-blog/post/second-post</link>
+							<guid isPermaLink="true">https://ilkersigirci.github.io/my-blog/post/second-post</guid>
 							<pubDate>Sun, 16 Apr 2023 00:00:00 GMT</pubDate>
 						</item>
 					
 						<item>
 							<title>First post</title>
 							<description>First post.</description>
-							<link>https://blog.ilkerflix.com/my-blog/post/first-post</link>
-							<guid isPermaLink="true">https://blog.ilkerflix.com/my-blog/post/first-post</guid>
+							<link>https://ilkersigirci.github.io/my-blog/post/first-post</link>
+							<guid isPermaLink="true">https://ilkersigirci.github.io/my-blog/post/first-post</guid>
 							<pubDate>Fri, 14 Apr 2023 00:00:00 GMT</pubDate>
 						</item>
 					
 						<item>
 							<title>MD Compatibility Test</title>
 							<description>MD Compatibility Test</description>
-							<link>https://blog.ilkerflix.com/my-blog/post/MD.Compatibility.Test</link>
-							<guid isPermaLink="true">https://blog.ilkerflix.com/my-blog/post/MD.Compatibility.Test</guid>
+							<link>https://ilkersigirci.github.io/my-blog/post/MD.Compatibility.Test</link>
+							<guid isPermaLink="true">https://ilkersigirci.github.io/my-blog/post/MD.Compatibility.Test</guid>
 							<pubDate>Mon, 10 Apr 2023 00:00:00 GMT</pubDate>
 						</item>
 					
