@@ -6,34 +6,26 @@
 				<atom:link href="https://ilkersigirci.github.io/my-blog/rss.xml" rel="self" type="application/rss+xml"/>
 				
 						<item>
-							<title>Third post.</title>
-							<description>Third post.</description>
-							<link>https://ilkersigirci.github.io/my-blog/post/Why.Nations.Fail</link>
-							<guid isPermaLink="true">https://ilkersigirci.github.io/my-blog/post/Why.Nations.Fail</guid>
-							<pubDate>Fri, 29 Dec 2023 00:00:00 GMT</pubDate>
+							<title>My Thesis</title>
+							<description>My Master Thesis Work</description>
+							<link>https://ilkersigirci.github.io/my-blog/post/My.Thesis</link>
+							<guid isPermaLink="true">https://ilkersigirci.github.io/my-blog/post/My.Thesis</guid>
+							<pubDate>Tue, 16 Jul 2024 00:00:00 GMT</pubDate>
 						</item>
 					
 						<item>
-							<title>Second</title>
-							<description>Second post.</description>
-							<link>https://ilkersigirci.github.io/my-blog/post/second-post</link>
-							<guid isPermaLink="true">https://ilkersigirci.github.io/my-blog/post/second-post</guid>
-							<pubDate>Sun, 16 Apr 2023 00:00:00 GMT</pubDate>
+							<title>Python Template</title>
+							<description>My Custom Python Project Template</description>
+							<link>https://ilkersigirci.github.io/my-blog/post/Python.Template</link>
+							<guid isPermaLink="true">https://ilkersigirci.github.io/my-blog/post/Python.Template</guid>
+							<pubDate>Tue, 16 Jul 2024 00:00:00 GMT</pubDate>
 						</item>
 					
 						<item>
-							<title>First post</title>
-							<description>First post.</description>
-							<link>https://ilkersigirci.github.io/my-blog/post/first-post</link>
-							<guid isPermaLink="true">https://ilkersigirci.github.io/my-blog/post/first-post</guid>
-							<pubDate>Fri, 14 Apr 2023 00:00:00 GMT</pubDate>
-						</item>
-					
-						<item>
-							<title>MD Compatibility Test</title>
-							<description>MD Compatibility Test</description>
-							<link>https://ilkersigirci.github.io/my-blog/post/MD.Compatibility.Test</link>
-							<guid isPermaLink="true">https://ilkersigirci.github.io/my-blog/post/MD.Compatibility.Test</guid>
+							<title>Markdown Compatibility</title>
+							<description>Markdown Compatibility</description>
+							<link>https://ilkersigirci.github.io/my-blog/post/MD.Compatibility</link>
+							<guid isPermaLink="true">https://ilkersigirci.github.io/my-blog/post/MD.Compatibility</guid>
 							<pubDate>Mon, 10 Apr 2023 00:00:00 GMT</pubDate>
 						</item>
 					
