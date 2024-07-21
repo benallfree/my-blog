@@ -16,20 +16,20 @@
 		
 		<link href="../_app/immutable/assets/0.DL5J0mDW.css" rel="stylesheet">
 		<link href="../_app/immutable/assets/7.gOD4MmU6.css" rel="stylesheet">
-		<link rel="modulepreload" href="../_app/immutable/entry/start.DYL42D0a.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/entry.CzfvZGsK.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/scheduler.xo3Df5wC.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/index.BLVjoJyi.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/paths.B60UmARp.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/start.Bl1i2u4T.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/entry.AN8wJ6WW.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/scheduler.CIBC4Cea.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index.Dft2nFop.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/paths.D9Knm6WP.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/control.CYgJF_JY.js">
-		<link rel="modulepreload" href="../_app/immutable/entry/app.CtwxpeH4.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/app.D4qJVNtS.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/preload-helper.D6kgxu3v.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/index.BDQwHQ1J.js">
-		<link rel="modulepreload" href="../_app/immutable/nodes/0.Dh4ir1iq.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/config.CbaRHf_O.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index.BLdk8j6F.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/0.CFbH_zkm.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/config.DxOT1vxc.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/spread.CgU5AtxT.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/each.D6YF6ztN.js">
-		<link rel="modulepreload" href="../_app/immutable/nodes/7.C7iRynoC.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/7.BgSxOPTw.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/index.g5YcAAdQ.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/utils.3InfNRpA.js"><title>Markdown Compatibility</title><!-- HEAD_svelte-ylbs26_START --><meta property="og:type" content="article"><meta property="og:title" content="Markdown Compatibility"><!-- HEAD_svelte-ylbs26_END -->
 	</head>
@@ -117,11 +117,11 @@ Unlike a pre-formatted code block, a code span indicates code within a
 normal paragraph. For example:</p> <p data-svelte-h="svelte-xgcrm7">Use the <code>printf()</code> function.</p> <!-- HTML_TAG_START --><pre class="shiki one-dark-pro" style="background-color:#282c34;color:#abb2bf" tabindex="0"><code><span class="line"><span style="color:#C678DD">function</span><span style="color:#61AFEF"> greet</span><span style="color:#ABB2BF">(</span><span style="color:#E06C75;font-style:italic">name</span><span style="color:#ABB2BF">: </span><span style="color:#E5C07B">string</span><span style="color:#ABB2BF">) &#123;</span></span>
 <span class="line"><span style="color:#E5C07B">	console</span><span style="color:#ABB2BF">.</span><span style="color:#61AFEF">log</span><span style="color:#ABB2BF">(</span><span style="color:#98C379">&#96;Hey </span><span style="color:#C678DD">$&#123;</span><span style="color:#E06C75">name</span><span style="color:#C678DD">&#125;</span><span style="color:#98C379">! 👋&#96;</span><span style="color:#ABB2BF">)</span></span>
 <span class="line"><span style="color:#ABB2BF">&#125;</span></span></code></pre><!-- HTML_TAG_END --> <h2 id="static-image-serving" data-svelte-h="svelte-7wsxdy">Static Image Serving</h2> <ul><li>Media inside the <strong data-svelte-h="svelte-kxgo52">static</strong> folder is served from <code data-svelte-h="svelte-3m7v69">/</code> normally.
-<ul class="contains-task-list"><li data-svelte-h="svelte-hswg98">But if you arrange routes in <code>src/routes/post/[slug]</code> form, the static media will be served from <code>../</code>.</li> <li class="task-list-item" data-svelte-h="svelte-185ilwm"><input type="checkbox" disabled> Research this</li> <li> <img src="../favicon.png" alt="Svelte" loading="lazy"></li></ul></li></ul> <h2 id="svelte-component-inside-markdown" data-svelte-h="svelte-1q57lzx">Svelte Component inside Markdown</h2> <button>0</button></div> </article></div></main> <footer class="svelte-k2ae0s"><p class="svelte-k2ae0s">Ilkerflix © 2024</p> </footer> </div> 
+<ul class="contains-task-list"><li data-svelte-h="svelte-hswg98">But if you arrange routes in <code>src/routes/post/[slug]</code> form, the static media will be served from <code>../</code>.</li> <li data-svelte-h="svelte-1crax70">If one uses <code>enhanced:img</code> instead of default <code>img</code>, images must be located inside <code>src/assets/images</code> and they can be referenced only by their file name.</li> <li class="task-list-item" data-svelte-h="svelte-185ilwm"><input type="checkbox" disabled> Research this</li> <li>   <figure class="image"><picture><source srcset="/my-blog/_app/immutable/assets/favicon.DSzMOhH0.avif 1x, /my-blog/_app/immutable/assets/favicon.BSXAft7T.avif 2x" type="image/avif"><source srcset="/my-blog/_app/immutable/assets/favicon.CC5L6FJs.webp 1x, /my-blog/_app/immutable/assets/favicon.BGmvasG2.webp 2x" type="image/webp"><source srcset="/my-blog/_app/immutable/assets/favicon.CHMrqimo.png 1x, /my-blog/_app/immutable/assets/favicon.CUVDo622.png 2x" type="image/png"> <img src="/my-blog/_app/immutable/assets/favicon.CUVDo622.png" alt="Svelte" width="128" height="128"></picture></figure></li></ul></li></ul> <h2 id="svelte-component-inside-markdown" data-svelte-h="svelte-1q57lzx">Svelte Component inside Markdown</h2> <button>0</button></div> </article></div></main> <footer class="svelte-k2ae0s"><p class="svelte-k2ae0s">Ilkerflix © 2024</p> </footer> </div> 
 			
 			<script>
 				{
-					__sveltekit_1ospcig = {
+					__sveltekit_cmag59 = {
 						base: new URL("..", location).pathname.slice(0, -1),
 						assets: "/my-blog"
 					};
@@ -131,8 +131,8 @@ normal paragraph. For example:</p> <p data-svelte-h="svelte-xgcrm7">Use the <cod
 					const data = [null,null];
 
 					Promise.all([
-						import("../_app/immutable/entry/start.DYL42D0a.js"),
-						import("../_app/immutable/entry/app.CtwxpeH4.js")
+						import("../_app/immutable/entry/start.Bl1i2u4T.js"),
+						import("../_app/immutable/entry/app.D4qJVNtS.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
 							node_ids: [0, 7],
