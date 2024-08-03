@@ -14,35 +14,58 @@
 				: localStorage.setItem('color-scheme', 'dark')
 		</script>
 		
-		<link href="../_app/immutable/assets/0.DL5J0mDW.css" rel="stylesheet">
-		<link href="../_app/immutable/assets/7.gOD4MmU6.css" rel="stylesheet">
-		<link rel="modulepreload" href="../_app/immutable/entry/start.n1rw2cQr.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/entry.DYo8ZFZV.js">
+		<link href="../_app/immutable/assets/0.CTcEZJ5h.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/7.DzdVFCNu.css" rel="stylesheet">
+		<link rel="modulepreload" href="../_app/immutable/entry/start.DjsJ5eyw.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/entry.BNZPiblh.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/scheduler.CIBC4Cea.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/index.Dft2nFop.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/paths.CorS5oYt.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/paths.CPVQ81jt.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/control.CYgJF_JY.js">
-		<link rel="modulepreload" href="../_app/immutable/entry/app.BiBr6W1O.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/app.U4cWKkkg.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/preload-helper.D6kgxu3v.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/index.BLdk8j6F.js">
-		<link rel="modulepreload" href="../_app/immutable/nodes/0.B-1PzfLr.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/config.D8nrwMEN.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index.ueJuiCCK.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/0.C0Kn7Jq1.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/config.eBldFU2T.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/spread.CgU5AtxT.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/each.D6YF6ztN.js">
-		<link rel="modulepreload" href="../_app/immutable/nodes/7.BgSxOPTw.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/7.DtMudBGE.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/index.g5YcAAdQ.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/utils.3InfNRpA.js"><title>Python Template</title><!-- HEAD_svelte-ylbs26_START --><meta property="og:type" content="article"><meta property="og:title" content="Python Template"><!-- HEAD_svelte-ylbs26_END -->
 	</head>
 	<body data-sveltekit-preload-data="hover">
-		<div style="display: contents">  <div class="layout svelte-1sq3us8"><nav class="svelte-scea26"><a href="../" class="title svelte-scea26"><b>Ilkerflix</b></a> <ul class="links svelte-scea26" data-svelte-h="svelte-vsnvj0"><li><a href="../about" class="svelte-scea26">About</a></li> <li><a href="../contact" class="svelte-scea26">Contact</a></li> <li><a href="../rss.xml" target="_blank" class="svelte-scea26">RSS</a></li></ul> <button aria-label="Toggle theme" class="svelte-114mtci"><div class="svelte-114mtci"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon lucide lucide-moon"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path></svg> <span data-svelte-h="svelte-397x2m">Dark</span></div> </button> </nav> <main class="svelte-1sq3us8"><div class="transition svelte-vcdv4c"> <article class="svelte-8uncrq"><hgroup><h1 class="svelte-8uncrq">Python Template</h1> <p class="svelte-8uncrq">Published at Jul 16, 2024</p></hgroup> <div class="tags svelte-8uncrq"><span class="surface-4 svelte-8uncrq">#programming</span><span class="surface-4 svelte-8uncrq">#python</span></div> <div class="prose"><h2 id="project-structure" data-svelte-h="svelte-k8hylt">Project Structure</h2> <ul data-svelte-h="svelte-bljnb5"><li><a href="https://github.com/ilkersigirci/python-template" rel="nofollow">Github Repository</a></li> <li>It uses <code>project.toml</code> instead of <code>setup.py</code> and <code>setup.cfg</code>. The reasoning is following:
-<ul><li>As <a href="https://github.com/pypa/setuptools/blob/main/docs/userguide/quickstart.rst" rel="nofollow">official setuptools guide</a> says, ” configuring new projects via setup.py is discouraged”</li> <li>One of the biggest problems with setuptools is that the use of an executable file (i.e. the setup.py) cannot be executed without knowing its dependencies. And there is really no way to know what these dependencies are unless you actually execute the file that contains the information related to package dependencies.</li> <li>The pyproject.toml file is supposed to solve the build-tool dependency chicken and egg problem since pip itself can read pyproject.yoml along with the version of setuptools or wheel the project requires.</li> <li>The pyproject.toml file was introduced in PEP-518 (2016) as a way of separating configuration of the build system from a specific, optional library (setuptools) and also enabling setuptools to install itself without already being installed. Subsequently PEP-621 (2020) introduces the idea that the pyproject.toml file be used for wider project configuration and PEP-660 (2021) proposes finally doing away with the need for setup.py for editable installation using pip.</li></ul></li> <li>It uses <a href="https://github.com/astral-sh/rye" rel="nofollow">rye</a> for python dependency operations and virtual environment management.</li> <li>It uses <code>src</code> layout, which is the recommended layout for python projects to avoid common <a href="https://blog.ionelmc.ro/2014/05/25/python-packaging/#the-structure" rel="nofollow">pitfalls</a>.</li></ul> <h2 id="install" data-svelte-h="svelte-13f6njw">Install</h2> <h3 id="default-installation" data-svelte-h="svelte-vmb26b">Default installation</h3> <ul data-svelte-h="svelte-1b4nucl"><li>Install rye - System wide</li></ul> <!-- HTML_TAG_START --><pre class="shiki one-dark-pro" style="background-color:#282c34;color:#abb2bf" tabindex="0"><code><span class="line"><span style="color:#61AFEF">make</span><span style="color:#D19A66"> -s</span><span style="color:#98C379"> install-rye</span></span></code></pre><!-- HTML_TAG_END --> <ul data-svelte-h="svelte-uwync5"><li>Install the project dependencies</li></ul> <!-- HTML_TAG_START --><pre class="shiki one-dark-pro" style="background-color:#282c34;color:#abb2bf" tabindex="0"><code><span class="line"><span style="color:#61AFEF">make</span><span style="color:#D19A66"> -s</span><span style="color:#98C379"> install</span></span></code></pre><!-- HTML_TAG_END --> <ul data-svelte-h="svelte-124l0tb"><li>After running above command, the project installed in editable mode with all development and test dependencies installed.</li> <li>Moreover, a dummy <code>entry point</code> called <code>placeholder</code> will be available as a cli command.</li></ul> <h3 id="docker" data-svelte-h="svelte-1fahnoc">Docker</h3> <!-- HTML_TAG_START --><pre class="shiki one-dark-pro" style="background-color:#282c34;color:#abb2bf" tabindex="0"><code><span class="line"><span style="color:#7F848E;font-style:italic"># Development build (800 MB)</span></span>
+		<div style="display: contents">  <div class="layout svelte-1sq3us8"><nav class="svelte-scea26"><a href="../" class="title svelte-scea26"><b>Ilkerflix</b></a> <ul class="links svelte-scea26" data-svelte-h="svelte-vsnvj0"><li><a href="../about" class="svelte-scea26">About</a></li> <li><a href="../contact" class="svelte-scea26">Contact</a></li> <li><a href="../rss.xml" target="_blank" class="svelte-scea26">RSS</a></li></ul> <button aria-label="Toggle theme" class="svelte-114mtci"><div class="svelte-114mtci"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-icon lucide lucide-moon"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path></svg> <span data-svelte-h="svelte-397x2m">Dark</span></div> </button> </nav> <main class="svelte-1sq3us8"><div class="transition svelte-vcdv4c"> <article class="svelte-sim7ny"><hgroup><h1 class="svelte-sim7ny">Python Template</h1> <p class="svelte-sim7ny">Published at Jul 16, 2024</p></hgroup> <div class="tags svelte-sim7ny"><span class="surface-4 svelte-sim7ny">#programming</span><span class="surface-4 svelte-sim7ny">#python</span></div> <div class="prose"><h2 id="contents" data-svelte-h="svelte-mkui86">Contents</h2> <ul data-svelte-h="svelte-zce9dk"><li><a href="#project-structure">Project Structure</a></li> <li><a href="#install">Install</a> <ul><li><a href="#default-installation">Default installation</a></li> <li><a href="#docker">Docker</a></li></ul></li> <li><a href="#ide-setings">IDE Setings</a> <ul><li><a href="#pycharm">Pycharm</a> <ul><li><a href="#inspections">Inspections</a></li> <li><a href="#plugins">Plugins</a></li></ul></li> <li><a href="#vscode">Vscode</a></li></ul></li> <li><a href="#useful-makefile-commands">Useful Makefile commands</a></li></ul> <h2 id="project-structure" data-svelte-h="svelte-k8hylt">Project Structure</h2> <ul data-svelte-h="svelte-bljnb5"><li><a href="https://github.com/ilkersigirci/python-template" rel="nofollow">Github Repository</a></li> <li>It uses <code>project.toml</code> instead of <code>setup.py</code> and <code>setup.cfg</code>. The reasoning is following:
+<ul><li>As <a href="https://github.com/pypa/setuptools/blob/main/docs/userguide/quickstart.rst" rel="nofollow">official setuptools guide</a> says, ” configuring new projects via setup.py is discouraged”</li> <li>One of the biggest problems with setuptools is that the use of an executable file (i.e. the setup.py) cannot be executed without knowing its dependencies. And there is really no way to know what these dependencies are unless you actually execute the file that contains the information related to package dependencies.</li> <li>The pyproject.toml file is supposed to solve the build-tool dependency chicken and egg problem since pip itself can read pyproject.yoml along with the version of setuptools or wheel the project requires.</li> <li>The pyproject.toml file was introduced in PEP-518 (2016) as a way of separating configuration of the build system from a specific, optional library (setuptools) and also enabling setuptools to install itself without already being installed. Subsequently PEP-621 (2020) introduces the idea that the pyproject.toml file be used for wider project configuration and PEP-660 (2021) proposes finally doing away with the need for setup.py for editable installation using pip.</li></ul></li> <li>It uses <a href="https://github.com/astral-sh/rye" rel="nofollow">rye</a> for python dependency operations and virtual environment management.</li> <li>It uses <code>src</code> layout, which is the recommended layout for python projects to avoid common <a href="https://blog.ionelmc.ro/2014/05/25/python-packaging/#the-structure" rel="nofollow">pitfalls</a>.</li></ul> <h2 id="install" data-svelte-h="svelte-13f6njw">Install</h2> <h3 id="default-installation" data-svelte-h="svelte-vmb26b">Default installation</h3> <ul data-svelte-h="svelte-1b4nucl"><li>Install rye - System wide</li></ul> <!-- HTML_TAG_START --><pre class="shiki one-dark-pro" style="background-color:#282c34;color:#abb2bf" tabindex="0"><code><span class="line"><span style="color:#61AFEF">make</span><span style="color:#D19A66"> -s</span><span style="color:#98C379"> install-rye</span></span></code><button class="copy" data-code="make -s install-rye" onclick="
+          navigator.clipboard.writeText(this.dataset.code);
+          this.classList.add(&#x27;copied&#x27;);
+          setTimeout(() => this.classList.remove(&#x27;copied&#x27;), 2000)
+        "><span class="ready"></span><span class="success"></span></button></pre><!-- HTML_TAG_END --> <ul data-svelte-h="svelte-uwync5"><li>Install the project dependencies</li></ul> <!-- HTML_TAG_START --><pre class="shiki one-dark-pro" style="background-color:#282c34;color:#abb2bf" tabindex="0"><code><span class="line"><span style="color:#61AFEF">make</span><span style="color:#D19A66"> -s</span><span style="color:#98C379"> install</span></span></code><button class="copy" data-code="make -s install" onclick="
+          navigator.clipboard.writeText(this.dataset.code);
+          this.classList.add(&#x27;copied&#x27;);
+          setTimeout(() => this.classList.remove(&#x27;copied&#x27;), 2000)
+        "><span class="ready"></span><span class="success"></span></button></pre><!-- HTML_TAG_END --> <ul data-svelte-h="svelte-124l0tb"><li>After running above command, the project installed in editable mode with all development and test dependencies installed.</li> <li>Moreover, a dummy <code>entry point</code> called <code>placeholder</code> will be available as a cli command.</li></ul> <h3 id="docker" data-svelte-h="svelte-1fahnoc">Docker</h3> <!-- HTML_TAG_START --><pre class="shiki one-dark-pro" style="background-color:#282c34;color:#abb2bf" tabindex="0"><code><span class="line"><span style="color:#7F848E;font-style:italic"># Development build (800 MB)</span></span>
 <span class="line"><span style="color:#61AFEF">docker</span><span style="color:#98C379"> build</span><span style="color:#D19A66"> --tag</span><span style="color:#98C379"> python-template</span><span style="color:#D19A66"> --file</span><span style="color:#98C379"> docker/Dockerfile</span><span style="color:#D19A66"> --target</span><span style="color:#98C379"> development</span><span style="color:#98C379"> .</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#7F848E;font-style:italic"># Production build (145 MB)</span></span>
-<span class="line"><span style="color:#61AFEF">docker</span><span style="color:#98C379"> build</span><span style="color:#D19A66"> --tag</span><span style="color:#98C379"> python-template</span><span style="color:#D19A66"> --file</span><span style="color:#98C379"> docker/Dockerfile</span><span style="color:#D19A66"> --target</span><span style="color:#98C379"> production</span><span style="color:#98C379"> .</span></span></code></pre><!-- HTML_TAG_END --> <ul data-svelte-h="svelte-mip6nu"><li>To run command inside the container:</li></ul> <!-- HTML_TAG_START --><pre class="shiki one-dark-pro" style="background-color:#282c34;color:#abb2bf" tabindex="0"><code><span class="line"><span style="color:#61AFEF">docker</span><span style="color:#98C379"> run</span><span style="color:#D19A66"> -it</span><span style="color:#98C379"> python-template:latest</span><span style="color:#98C379"> bash</span></span>
+<span class="line"><span style="color:#61AFEF">docker</span><span style="color:#98C379"> build</span><span style="color:#D19A66"> --tag</span><span style="color:#98C379"> python-template</span><span style="color:#D19A66"> --file</span><span style="color:#98C379"> docker/Dockerfile</span><span style="color:#D19A66"> --target</span><span style="color:#98C379"> production</span><span style="color:#98C379"> .</span></span></code><button class="copy" data-code="# Development build (800 MB)
+docker build --tag python-template --file docker/Dockerfile --target development .
+
+# Production build (145 MB)
+docker build --tag python-template --file docker/Dockerfile --target production ." onclick="
+          navigator.clipboard.writeText(this.dataset.code);
+          this.classList.add(&#x27;copied&#x27;);
+          setTimeout(() => this.classList.remove(&#x27;copied&#x27;), 2000)
+        "><span class="ready"></span><span class="success"></span></button></pre><!-- HTML_TAG_END --> <ul data-svelte-h="svelte-mip6nu"><li>To run command inside the container:</li></ul> <!-- HTML_TAG_START --><pre class="shiki one-dark-pro" style="background-color:#282c34;color:#abb2bf" tabindex="0"><code><span class="line"><span style="color:#61AFEF">docker</span><span style="color:#98C379"> run</span><span style="color:#D19A66"> -it</span><span style="color:#98C379"> python-template:latest</span><span style="color:#98C379"> bash</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#7F848E;font-style:italic"># Temporary container</span></span>
-<span class="line"><span style="color:#61AFEF">docker</span><span style="color:#98C379"> run</span><span style="color:#D19A66"> --rm</span><span style="color:#D19A66"> -it</span><span style="color:#98C379"> python-template:latest</span><span style="color:#98C379"> bash</span></span></code></pre><!-- HTML_TAG_END --> <h2 id="ide-setings" data-svelte-h="svelte-7m6hxz">IDE Setings</h2> <h3 id="pycharm" data-svelte-h="svelte-1hh9t2c">Pycharm</h3> <ul data-svelte-h="svelte-1qr7igu"><li>Line-length: <code>Editor -&gt; Code Style -&gt; Hard wrap at 88</code></li></ul> <h4 id="inspections" data-svelte-h="svelte-f6y8x8">Inspections</h4> <p data-svelte-h="svelte-9rsha0">Settings -&gt; Editor -&gt; Inspections -&gt; Python</p> <p data-svelte-h="svelte-1v1gr97">Enable all except:</p> <ul data-svelte-h="svelte-bf4yk"><li>Accessing a protected member of a class or a module</li> <li>Assignment can be replaced with augmented assignments</li> <li>Classic style class usage</li> <li>Incorrect BDD Behave-specific definitions</li> <li>No encoding specified for file</li> <li>The function argument is equal to the default parameter</li> <li>Type checker compatible with Pydantic</li> <li>For “PEP 8 coding style violation”:
+<span class="line"><span style="color:#61AFEF">docker</span><span style="color:#98C379"> run</span><span style="color:#D19A66"> --rm</span><span style="color:#D19A66"> -it</span><span style="color:#98C379"> python-template:latest</span><span style="color:#98C379"> bash</span></span></code><button class="copy" data-code="docker run -it python-template:latest bash
+
+# Temporary container
+docker run --rm -it python-template:latest bash" onclick="
+          navigator.clipboard.writeText(this.dataset.code);
+          this.classList.add(&#x27;copied&#x27;);
+          setTimeout(() => this.classList.remove(&#x27;copied&#x27;), 2000)
+        "><span class="ready"></span><span class="success"></span></button></pre><!-- HTML_TAG_END --> <h2 id="ide-setings" data-svelte-h="svelte-7m6hxz">IDE Setings</h2> <h3 id="pycharm" data-svelte-h="svelte-1hh9t2c">Pycharm</h3> <ul data-svelte-h="svelte-1qr7igu"><li>Line-length: <code>Editor -&gt; Code Style -&gt; Hard wrap at 88</code></li></ul> <h4 id="inspections" data-svelte-h="svelte-f6y8x8">Inspections</h4> <p data-svelte-h="svelte-9rsha0">Settings -&gt; Editor -&gt; Inspections -&gt; Python</p> <p data-svelte-h="svelte-1v1gr97">Enable all except:</p> <ul data-svelte-h="svelte-bf4yk"><li>Accessing a protected member of a class or a module</li> <li>Assignment can be replaced with augmented assignments</li> <li>Classic style class usage</li> <li>Incorrect BDD Behave-specific definitions</li> <li>No encoding specified for file</li> <li>The function argument is equal to the default parameter</li> <li>Type checker compatible with Pydantic</li> <li>For “PEP 8 coding style violation”:
 Ignore = E266, E501</li> <li>For “PEP 8 naming convetion violation”:
 Ignore = N803</li></ul> <h4 id="plugins" data-svelte-h="svelte-149yf9e">Plugins</h4> <ul data-svelte-h="svelte-s2u5kx"><li>Ruff</li> <li>Pydantic</li></ul> <h3 id="vscode" data-svelte-h="svelte-vl5u6o">Vscode</h3> <ul data-svelte-h="svelte-1nz9r9j"><li>All recommended settings and extensions can be found in <code>.vscode</code> directory.</li></ul> <h2 id="useful-makefile-commands" data-svelte-h="svelte-8pcyvw">Useful Makefile commands</h2> <!-- HTML_TAG_START --><pre class="shiki one-dark-pro" style="background-color:#282c34;color:#abb2bf" tabindex="0"><code><span class="line"><span style="color:#7F848E;font-style:italic"># All available commands</span></span>
 <span class="line"><span style="color:#61AFEF">makefile</span></span>
@@ -64,11 +87,35 @@ Ignore = N803</li></ul> <h4 id="plugins" data-svelte-h="svelte-149yf9e">Plugins<
 <span class="line"><span style="color:#61AFEF">make</span><span style="color:#D19A66"> -s</span><span style="color:#98C379"> lint</span></span>
 <span class="line"></span>
 <span class="line"><span style="color:#7F848E;font-style:italic"># Profile a file</span></span>
-<span class="line"><span style="color:#61AFEF">make</span><span style="color:#D19A66"> -s</span><span style="color:#98C379"> profile</span><span style="color:#98C379"> PROFILE_FILE_PATH=</span><span style="color:#ABB2BF">&#x3C;</span><span style="color:#98C379">PATH_TO_FIL</span><span style="color:#ABB2BF">E></span></span></code></pre><!-- HTML_TAG_END --></div> </article></div></main> <footer class="svelte-k2ae0s"><p class="svelte-k2ae0s">Ilkerflix © 2024</p> </footer> </div> 
+<span class="line"><span style="color:#61AFEF">make</span><span style="color:#D19A66"> -s</span><span style="color:#98C379"> profile</span><span style="color:#98C379"> PROFILE_FILE_PATH=</span><span style="color:#ABB2BF">&#x3C;</span><span style="color:#98C379">PATH_TO_FIL</span><span style="color:#ABB2BF">E></span></span></code><button class="copy" data-code="# All available commands
+makefile
+makefile help
+
+# Run all tests
+make -s test
+
+# Run specific tests
+make -s test-one TEST_MARKER=<TEST_MARKER>
+
+# Remove unnecessary files such as build,test, cache
+make -s clean
+
+# Run all pre-commit hooks
+make -s pre-commit
+
+# Lint the project
+make -s lint
+
+# Profile a file
+make -s profile PROFILE_FILE_PATH=<PATH_TO_FILE>" onclick="
+          navigator.clipboard.writeText(this.dataset.code);
+          this.classList.add(&#x27;copied&#x27;);
+          setTimeout(() => this.classList.remove(&#x27;copied&#x27;), 2000)
+        "><span class="ready"></span><span class="success"></span></button></pre><!-- HTML_TAG_END --></div> </article></div></main> <footer class="svelte-k2ae0s"><p class="svelte-k2ae0s">Ilkerflix © 2024</p> </footer> </div> 
 			
 			<script>
 				{
-					__sveltekit_1kbftzx = {
+					__sveltekit_109asz6 = {
 						base: new URL("..", location).pathname.slice(0, -1),
 						assets: "/my-blog"
 					};
@@ -78,8 +125,8 @@ Ignore = N803</li></ul> <h4 id="plugins" data-svelte-h="svelte-149yf9e">Plugins<
 					const data = [null,null];
 
 					Promise.all([
-						import("../_app/immutable/entry/start.n1rw2cQr.js"),
-						import("../_app/immutable/entry/app.BiBr6W1O.js")
+						import("../_app/immutable/entry/start.DjsJ5eyw.js"),
+						import("../_app/immutable/entry/app.U4cWKkkg.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
 							node_ids: [0, 7],
